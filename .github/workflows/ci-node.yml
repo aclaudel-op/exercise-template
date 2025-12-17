@@ -43,3 +43,10 @@ jobs:
       with:
         name: coverage-acceptance-node-${{ matrix.node-version }}
         path: coverage-acceptance/
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      if: success()
+      with:
+        name: build-node-${{ matrix.node-version }}
+        path: dist/
