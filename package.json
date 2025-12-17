@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:report": "jest --coverage --coverageReporters=html --coverageReporters=text",
     "bun": "bun test"
   },
   "author": "",
