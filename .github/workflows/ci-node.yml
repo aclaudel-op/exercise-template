@@ -29,3 +29,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run test:report
+    - name: Upload test coverage report
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report-node-${{ matrix.node-version }}
+        path: coverage/
