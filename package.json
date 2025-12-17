@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest",
     "test:report": "jest --coverage --coverageReporters=html --coverageReporters=text",
     "bun": "bun test"
