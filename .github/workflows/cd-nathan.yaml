@@ -22,3 +22,5 @@ jobs:
       - run: npm run build
       - run: echo "pushing to ECR ..."
       - run: echo "this is now deployed to Staging"
+      - run: echo "running playwright tests..."
+      - run: npm run test
