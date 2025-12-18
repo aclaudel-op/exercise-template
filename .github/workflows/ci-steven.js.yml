@@ -28,3 +28,11 @@ jobs:
         with:
           name: coverage-report
           path: coverage
+
+
+      - run: npm run test:acceptance
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report-acceptance-tests
+          path: acceptance
