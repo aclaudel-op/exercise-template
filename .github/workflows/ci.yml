@@ -11,6 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      MY_SECRET_TOKEN: ${{ secrets.MY_SECRET_TOKEN }}
+      APP_URL: 'https://example.com'
+
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js 22x
@@ -33,3 +37,6 @@ jobs:
         with:
           name: coverage-report-acceptance-tests
           path: coverage-acceptance
+
+      - run: npm run echo-secret
+      - run: npm run echo-app-url
