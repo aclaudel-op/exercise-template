@@ -26,12 +26,12 @@ jobs:
       
       - uses: actions/upload-artifact@v4
         with:
-          name: coverage-report
+          name: coverage-report-unit-tests
           path: coverage
 
       - run: npm run test:acceptance
 
       - uses: actions/upload-artifact@v4
         with:
-          name: coverage-report
+          name: coverage-report-acceptance-tests
           path: coverage-acceptance
