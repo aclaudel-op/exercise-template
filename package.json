@@ -9,7 +9,8 @@
     "test:report": "jest --coverage --coverageReporters=html --coverageReporters=text",
     "test:acceptance": "jest --coverage --coverageReporters=html --coverageReporters=text --coverageDirectory=coverage-acceptance",
     "bun": "bun test",
-    "echo-secret": "echo token=$MY_SECRET_TOKEN"
+    "echo-secret": "echo token=$MY_SECRET_TOKEN",
+    "echo-app-url": "echo token=$APP_URL"
   },
   "author": "",
   "license": "ISC",
